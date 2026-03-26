@@ -18,111 +18,200 @@ export default function Home() {
     landscaping: "/3768CA9B-5E74-4FE3-967B-AAC1F92194C3_4_5005_c.jpeg",
   };
 
+  const processSteps = [
+    {
+      number: "01",
+      title: "On-site Consultation",
+      description:
+        "We evaluate your property conditions, goals, and maintenance expectations.",
+    },
+    {
+      number: "02",
+      title: "Tailored Plan",
+      description:
+        "You receive practical recommendations, clear scope, and transparent pricing.",
+    },
+    {
+      number: "03",
+      title: "Professional Delivery",
+      description:
+        "Our team executes cleanly, communicates clearly, and finishes on schedule.",
+    },
+  ];
+
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900">
-      <section className="relative isolate overflow-hidden">
+    <div className="min-h-screen bg-[color:var(--background)] text-[color:var(--foreground)]">
+      <section className="relative isolate overflow-hidden border-b border-[color:var(--line)]">
         <Image
           src="/624D1698-E0BC-4CA3-802D-C4DE71EC7663_4_5005_c.jpeg"
           alt="Seattle residential landscape installation with layered planting beds"
           fill
           priority
-          className="object-cover object-center"
+          className="object-cover object-center scale-105"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-slate-900/55" />
-        <div className="relative mx-auto flex min-h-[560px] w-full max-w-6xl items-center px-6 py-20">
-          <div className="max-w-3xl space-y-6 text-white">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-200">
-              Seattle Residential and Commercial Landscaping
-            </p>
-            <h1 className="text-4xl font-bold tracking-tight md:text-6xl">
-              Sophisticated landscapes built for Seattle living.
+        <div className="absolute inset-0 bg-gradient-to-r from-[#090c0a]/95 via-[#0b0f0d]/78 to-[#0b0f0d]/45" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0b0f0d] via-transparent to-[#0b0f0d]/35" />
+        <div className="absolute left-0 top-1/4 bottom-1/4 hidden w-[3px] bg-gradient-to-b from-transparent via-[color:var(--accent)] to-transparent opacity-60 md:block" />
+        <div className="relative mx-auto flex min-h-[700px] w-full max-w-7xl items-center px-6 py-24">
+          <div className="max-w-3xl space-y-7 text-white">
+            <div className="flex items-center gap-3">
+              <div className="h-px w-12 bg-[color:var(--accent)]" />
+              <p className="text-xs font-medium uppercase tracking-[0.42em] text-[color:var(--accent)]">
+                Seattle Residential and Commercial Landscaping
+              </p>
+            </div>
+            <h1 className="font-display text-5xl font-semibold leading-[1.02] md:text-7xl">
+              Landscapes with <span className="text-accent-gradient">presence</span>, crafted for
+              Northwest living.
             </h1>
-            <p className="max-w-2xl text-lg text-slate-100">
+            <p className="max-w-2xl text-lg leading-relaxed text-white/72 md:text-xl">
               From Ballard to Burien, Summit Landscape designs, builds, and maintains outdoor
               spaces that stay clean, functional, and beautiful through every season.
             </p>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-4">
               <Link
                 href="/services"
-                className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700"
+                className="bg-[color:var(--accent)] px-8 py-4 text-sm font-semibold uppercase tracking-[0.28em] text-[#0b0f0d] transition hover:bg-[color:var(--accent-strong)] hover:shadow-[0_0_30px_rgba(216,184,117,0.32)] hover:-translate-y-0.5"
               >
                 View Services
               </Link>
               <Link
                 href="/contact"
-                className="rounded-full border border-white/50 bg-white/10 px-6 py-3 font-semibold text-white backdrop-blur transition hover:bg-white/20"
+                className="border border-white/25 bg-white/8 px-8 py-4 text-sm font-semibold uppercase tracking-[0.28em] text-white backdrop-blur-sm transition hover:border-[color:var(--accent)] hover:text-[color:var(--accent)]"
               >
                 Request a Quote
               </Link>
             </div>
 
-            <div className="grid max-w-xl grid-cols-3 gap-3 pt-4">
-              <div className="rounded-xl border border-white/25 bg-white/10 p-3 backdrop-blur">
-                <p className="text-2xl font-bold">15+</p>
-                <p className="text-xs text-slate-200">Years Experience</p>
+            <div className="grid max-w-2xl grid-cols-1 gap-3 pt-4 sm:grid-cols-3">
+              <div className="border border-white/12 bg-white/8 p-4 backdrop-blur-sm">
+                <p className="font-display text-3xl font-semibold text-white">15+</p>
+                <p className="mt-1 text-xs uppercase tracking-[0.22em] text-white/58">Years Experience</p>
               </div>
-              <div className="rounded-xl border border-white/25 bg-white/10 p-3 backdrop-blur">
-                <p className="text-2xl font-bold">18</p>
-                <p className="text-xs text-slate-200">Service Areas</p>
+              <div className="border border-white/12 bg-white/8 p-4 backdrop-blur-sm">
+                <p className="font-display text-3xl font-semibold text-white">18</p>
+                <p className="mt-1 text-xs uppercase tracking-[0.22em] text-white/58">Service Areas</p>
               </div>
-              <div className="rounded-xl border border-white/25 bg-white/10 p-3 backdrop-blur">
-                <p className="text-2xl font-bold">100%</p>
-                <p className="text-xs text-slate-200">Custom Plans</p>
+              <div className="border border-white/12 bg-white/8 p-4 backdrop-blur-sm">
+                <p className="font-display text-3xl font-semibold text-white">100%</p>
+                <p className="mt-1 text-xs uppercase tracking-[0.22em] text-white/58">Custom Plans</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-6xl px-6 py-12">
-        <div className="rounded-2xl border border-slate-200 bg-white px-6 py-5">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-700">
-            Why Homeowners Choose Summit
-          </p>
-          <div className="mt-3 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-slate-700">
-            <span>Licensed and insured professionals</span>
-            <span className="text-slate-300">•</span>
-            <span>Drainage and climate-aware recommendations</span>
-            <span className="text-slate-300">•</span>
-            <span>Clean, detail-focused project delivery</span>
+      <section className="mx-auto w-full max-w-7xl px-6 py-16">
+        <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.34em] text-[color:var(--accent)]">
+              Why Homeowners Choose Summit
+            </p>
+            <h2 className="mt-4 max-w-2xl font-display text-4xl font-semibold leading-tight text-white md:text-5xl">
+              Landscapes planned with restraint, structure, and long-term practicality.
+            </h2>
+            <p className="mt-5 max-w-2xl text-base leading-relaxed text-[color:var(--muted)] md:text-lg">
+              The strongest outdoor spaces do more than look finished on install day. We focus on
+              grading, drainage, plant selection, and material choices that continue to feel
+              composed through Seattle weather and year-round use.
+            </p>
+            <div className="mt-8 grid gap-4 sm:grid-cols-3">
+              <div className="panel-luxury p-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[color:var(--accent)]">
+                  Built Right
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-[color:var(--muted)]">
+                  Drainage-aware solutions and durable material selections.
+                </p>
+              </div>
+              <div className="panel-luxury p-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[color:var(--accent)]">
+                  Designed Calmly
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-[color:var(--muted)]">
+                  Clean lines, layered planting, and a more refined visual rhythm.
+                </p>
+              </div>
+              <div className="panel-luxury p-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[color:var(--accent)]">
+                  Maintained Well
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-[color:var(--muted)]">
+                  Outdoor spaces built to stay orderly and usable over time.
+                </p>
+              </div>
+            </div>
           </div>
+
+          <article className="overflow-hidden border border-[color:var(--line)] bg-[color:var(--surface)] shadow-[0_24px_60px_rgba(0,0,0,0.24)]">
+            <div className="relative h-[420px]">
+              <Image
+                src="/EAEFD167-AD6E-4835-9694-BF52449CD6E8_4_5005_c.jpeg"
+                alt="Completed low-maintenance landscape with gravel and mature trees"
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 40vw, 100vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0b0f0d]/92 via-[#0b0f0d]/18 to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 p-8">
+                <p className="text-xs font-semibold uppercase tracking-[0.34em] text-[color:var(--accent)]">
+                  Featured Project Direction
+                </p>
+                <h3 className="mt-3 font-display text-3xl font-semibold text-white">
+                  Elegant, low-maintenance outdoor environments
+                </h3>
+                <p className="mt-3 max-w-lg text-sm leading-relaxed text-white/70">
+                  Structured hardscape, layered greenery, and thoughtful spacing create a result
+                  that feels calm, expensive, and highly livable.
+                </p>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-6xl px-6 py-16">
+      <section className="mx-auto w-full max-w-7xl px-6 py-4">
         <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
-          <h2 className="text-3xl font-bold tracking-tight">Core Services</h2>
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.34em] text-[color:var(--accent)]">
+              Signature Offerings
+            </p>
+            <h2 className="font-display text-4xl font-semibold tracking-tight text-white">
+              Core Services
+            </h2>
+          </div>
           <Link
             href="/services"
-            className="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-slate-400"
+            className="border border-[color:var(--line)] px-5 py-3 text-xs font-semibold uppercase tracking-[0.28em] text-[color:var(--foreground)]/72 transition hover:border-[color:var(--accent)] hover:text-[color:var(--accent)]"
           >
             Explore All Services
           </Link>
         </div>
-        <div className="mt-8 grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-3">
           {serviceCategories.map((category) => (
             <article
               key={category.slug}
-              className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:shadow-md"
+              className="group overflow-hidden border border-[color:var(--line)] bg-[color:var(--surface)] transition duration-300 hover:-translate-y-1 hover:border-[color:var(--accent)]/45 hover:shadow-[0_24px_60px_rgba(0,0,0,0.26)]"
             >
-              <div className="relative h-48">
+              <div className="relative h-56 overflow-hidden">
                 <Image
                   src={serviceVisuals[category.slug]}
                   alt={category.name}
                   fill
-                  className="object-cover"
+                  className="object-cover transition duration-700 group-hover:scale-105"
                   sizes="(min-width: 768px) 33vw, 100vw"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0b0f0d]/85 via-transparent to-transparent" />
               </div>
-              <div className="p-5">
-                <h3 className="text-xl font-semibold text-slate-900">{category.name}</h3>
-                <p className="mt-2 text-sm text-slate-600">{category.summary}</p>
+              <div className="p-6">
+                <h3 className="font-display text-2xl font-semibold text-white">{category.name}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-[color:var(--muted)]">{category.summary}</p>
                 <Link
                   href={`/services/${category.slug}`}
-                  className="mt-4 inline-block text-sm font-semibold text-emerald-700 transition hover:text-emerald-800"
+                  className="mt-5 inline-block text-xs font-semibold uppercase tracking-[0.28em] text-[color:var(--accent)] transition hover:text-[color:var(--accent-strong)]"
                 >
-                  View {category.name} →
+                  View {category.name}
                 </Link>
               </div>
             </article>
@@ -130,9 +219,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-6xl px-6 py-4">
+      <section className="mx-auto w-full max-w-7xl px-6 py-4">
         <div className="grid gap-6 md:grid-cols-3">
-          <article className="overflow-hidden rounded-2xl border border-slate-200 bg-white md:col-span-2">
+          <article className="overflow-hidden border border-[color:var(--line)] bg-[color:var(--surface)] md:col-span-2">
             <div className="relative h-80">
               <Image
                 src="/EAEFD167-AD6E-4835-9694-BF52449CD6E8_4_5005_c.jpeg"
@@ -141,9 +230,10 @@ export default function Home() {
                 className="object-cover"
                 sizes="(min-width: 768px) 66vw, 100vw"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0b0f0d]/65 via-transparent to-transparent" />
             </div>
           </article>
-          <article className="overflow-hidden rounded-2xl border border-slate-200 bg-white">
+          <article className="overflow-hidden border border-[color:var(--line)] bg-[color:var(--surface)]">
             <div className="relative h-80">
               <Image
                 src="/624D1698-E0BC-4CA3-802D-C4DE71EC7663_4_5005_c.jpeg"
@@ -152,73 +242,110 @@ export default function Home() {
                 className="object-cover"
                 sizes="(min-width: 768px) 33vw, 100vw"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0b0f0d]/65 via-transparent to-transparent" />
             </div>
           </article>
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-6xl px-6 py-16">
-        <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
-          <h2 className="text-3xl font-bold tracking-tight">Service Areas</h2>
-          <Link
-            href="/service-areas"
-            className="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-slate-400"
-          >
-            View All Areas
-          </Link>
-        </div>
-        <div className="flex flex-wrap gap-3">
-          {featuredAreas.map((area) => (
-            <Link
-              key={area.name}
-              href={area.href}
-              className="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-emerald-400 hover:text-emerald-700"
-            >
-              {area.name}
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      <section className="bg-white py-16">
-        <div className="mx-auto w-full max-w-6xl px-6">
-          <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
-            <h2 className="text-3xl font-bold tracking-tight">How We Work</h2>
+      <section className="mx-auto w-full max-w-7xl px-6 py-16">
+        <div className="grid gap-8 lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.34em] text-[color:var(--accent)]">
+              Process
+            </p>
+            <h2 className="mt-4 font-display text-4xl font-semibold tracking-tight text-white md:text-5xl">
+              A measured process that keeps projects clear and composed.
+            </h2>
+            <p className="mt-5 max-w-xl text-base leading-relaxed text-[color:var(--muted)] md:text-lg">
+              Premium work does not come from noise or overselling. It comes from an orderly
+              process, good judgment, and disciplined execution from first walkthrough to final
+              cleanup.
+            </p>
             <Link
               href="/projects"
-              className="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-slate-400"
+              className="mt-7 inline-block border border-[color:var(--line)] px-5 py-3 text-xs font-semibold uppercase tracking-[0.28em] text-[color:var(--foreground)]/72 transition hover:border-[color:var(--accent)] hover:text-[color:var(--accent)]"
             >
               View Projects
             </Link>
           </div>
-          <div className="mt-8 grid gap-6 md:grid-cols-3">
-            <article className="rounded-2xl border border-slate-200 p-6">
-              <p className="text-sm font-semibold text-emerald-700">01</p>
-              <h3 className="mt-2 text-xl font-semibold">On-site Consultation</h3>
-              <p className="mt-2 text-slate-600">
-                We evaluate your property conditions, goals, and maintenance expectations.
-              </p>
-            </article>
-            <article className="rounded-2xl border border-slate-200 p-6">
-              <p className="text-sm font-semibold text-emerald-700">02</p>
-              <h3 className="mt-2 text-xl font-semibold">Tailored Plan</h3>
-              <p className="mt-2 text-slate-600">
-                You receive practical recommendations, clear scope, and transparent pricing.
-              </p>
-            </article>
-            <article className="rounded-2xl border border-slate-200 p-6">
-              <p className="text-sm font-semibold text-emerald-700">03</p>
-              <h3 className="mt-2 text-xl font-semibold">Professional Delivery</h3>
-              <p className="mt-2 text-slate-600">
-                Our team executes cleanly, communicates clearly, and finishes on schedule.
-              </p>
-            </article>
+          <div className="grid gap-5">
+            {processSteps.map((step) => (
+              <article key={step.number} className="panel-luxury p-7">
+                <p className="text-sm font-semibold tracking-[0.28em] text-[color:var(--accent)]">
+                  {step.number}
+                </p>
+                <h3 className="mt-3 font-display text-2xl font-semibold text-white">{step.title}</h3>
+                <p className="mt-3 text-[color:var(--muted)]">{step.description}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-6xl px-6 py-16">
-        <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-lg">
+      <section className="py-16">
+        <div className="mx-auto w-full max-w-7xl px-6">
+          <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.34em] text-[color:var(--accent)]">
+                Regional Coverage
+              </p>
+              <h2 className="font-display text-4xl font-semibold tracking-tight text-white">
+                Service Areas
+              </h2>
+            </div>
+            <Link
+              href="/service-areas"
+              className="border border-[color:var(--line)] px-5 py-3 text-xs font-semibold uppercase tracking-[0.28em] text-[color:var(--foreground)]/72 transition hover:border-[color:var(--accent)] hover:text-[color:var(--accent)]"
+            >
+              View All Areas
+            </Link>
+          </div>
+          <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+            <div className="overflow-hidden border border-[color:var(--line)] bg-[color:var(--surface)] shadow-[0_24px_60px_rgba(0,0,0,0.22)]">
+              <div className="relative h-[420px]">
+                <Image
+                  src="/624D1698-E0BC-4CA3-802D-C4DE71EC7663_4_5005_c.jpeg"
+                  alt="Finished planting bed with layered shrubs and ornamental grasses"
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 1024px) 40vw, 100vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0b0f0d]/88 via-transparent to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 p-8">
+                  <p className="text-xs font-semibold uppercase tracking-[0.34em] text-[color:var(--accent)]">
+                    Seattle and Nearby Communities
+                  </p>
+                  <p className="mt-3 max-w-lg text-sm leading-relaxed text-white/72">
+                    Serving neighborhoods and surrounding areas with landscaping that feels tailored
+                    to the property rather than templated from job to job.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="panel-luxury p-7">
+              <p className="text-sm leading-relaxed text-[color:var(--muted)]">
+                We work across Seattle neighborhoods and nearby communities, adapting scope and
+                recommendations to lot size, site conditions, architecture, and maintenance goals.
+              </p>
+              <div className="mt-6 flex flex-wrap gap-3">
+                {featuredAreas.map((area) => (
+                  <Link
+                    key={area.name}
+                    href={area.href}
+                    className="border border-[color:var(--line)] bg-[color:var(--surface-strong)] px-4 py-2.5 text-sm font-medium text-[color:var(--muted)] transition hover:border-[color:var(--accent)] hover:text-[color:var(--accent)]"
+                  >
+                    {area.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto w-full max-w-7xl px-6 py-16">
+        <div className="overflow-hidden border border-[color:var(--line)] bg-[color:var(--surface)] shadow-[0_24px_60px_rgba(0,0,0,0.26)]">
           <Image
             src="/3768CA9B-5E74-4FE3-967B-AAC1F92194C3_4_5005_c.jpeg"
             alt="Completed landscape project with structured planting beds"
@@ -229,17 +356,22 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-6xl px-6 py-16">
-        <div className="rounded-3xl bg-slate-900 px-8 py-10 text-white md:flex md:items-center md:justify-between">
+      <section className="mx-auto w-full max-w-7xl px-6 py-16">
+        <div className="panel-luxury px-8 py-10 md:flex md:items-center md:justify-between">
           <div>
-            <h2 className="text-3xl font-bold tracking-tight">Ready to upgrade your landscape?</h2>
-            <p className="mt-3 max-w-2xl text-slate-300">
+            <p className="text-xs font-semibold uppercase tracking-[0.34em] text-[color:var(--accent)]">
+              Start Your Project
+            </p>
+            <h2 className="mt-3 font-display text-4xl font-semibold tracking-tight text-white">
+              Ready to upgrade your landscape?
+            </h2>
+            <p className="mt-3 max-w-2xl text-[color:var(--muted)]">
               Schedule a free consultation for your home or commercial property.
             </p>
           </div>
           <a
             href="mailto:hello@summitlandscape.com"
-            className="mt-6 inline-block rounded-full bg-white px-6 py-3 font-semibold text-slate-900 transition hover:bg-slate-100 md:mt-0"
+            className="mt-6 inline-block bg-[color:var(--accent)] px-6 py-4 text-sm font-semibold uppercase tracking-[0.28em] text-[#0b0f0d] transition hover:bg-[color:var(--accent-strong)] hover:shadow-[0_0_28px_rgba(216,184,117,0.28)] md:mt-0"
           >
             hello@summitlandscape.com
           </a>

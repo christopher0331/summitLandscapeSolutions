@@ -1,18 +1,74 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f8fafc;
-  --foreground: #0f172a;
+  --background: #0b0f0d;
+  --foreground: #f5f1e8;
+  --surface: #101714;
+  --surface-strong: #151f1a;
+  --muted: #b8b1a4;
+  --line: rgba(216, 184, 117, 0.2);
+  --accent: #d8b875;
+  --accent-strong: #e7ca8f;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
+  --font-display: var(--font-playfair-display);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-display {
+  font-family: var(--font-playfair-display), Georgia, serif;
+}
+
+.text-accent-gradient {
+  background: linear-gradient(135deg, #f2dfb0 0%, #d8b875 45%, #b88b3f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.panel-luxury {
+  background: linear-gradient(180deg, rgba(20, 27, 23, 0.96) 0%, rgba(13, 18, 15, 0.98) 100%);
+  border: 1px solid var(--line);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+}
+
+::selection {
+  background: rgba(216, 184, 117, 0.28);
+  color: #fff7e7;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111614;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7c6640;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
 }
