@@ -15,30 +15,31 @@ const legalLinks = [
 
 export function SiteFooter() {
   return (
-    <footer className="relative bg-[#070907] text-white/65">
-      <div className="h-[2px] bg-gradient-to-r from-transparent via-[color:var(--accent)] to-transparent" />
+    <footer className="relative border-t border-slate-200 bg-white text-slate-600">
       <div className="mx-auto grid w-full max-w-7xl gap-10 px-6 py-14 md:grid-cols-3">
         <section>
           <div className="flex flex-col leading-tight">
-            <span className="font-display text-2xl font-semibold tracking-[0.18em] text-white">
+            <span className="font-display text-2xl font-semibold tracking-[0.18em] text-slate-900">
               SUMMIT
             </span>
-            <span className="mt-1 text-[10px] font-medium uppercase tracking-[0.34em] text-[color:var(--accent)]">
-              Landscape Seattle
+            <span className="mt-1 text-[10px] font-medium uppercase tracking-[0.34em] text-emerald-700">
+              Landscape Solutions
             </span>
           </div>
-          <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/60">
-            Landscaping design, build, and maintenance services for Seattle and nearby
-            communities.
+          <p className="mt-4 max-w-sm text-sm leading-relaxed text-slate-600">
+            Landscaping design, build, and maintenance services for Burien, Seattle, and
+            surrounding communities.
           </p>
         </section>
 
         <section>
-          <h2 className="text-sm font-semibold uppercase tracking-[0.28em] text-white">Quick Links</h2>
-          <ul className="mt-4 space-y-3 text-sm text-white/60">
+          <h2 className="text-sm font-semibold uppercase tracking-[0.28em] text-slate-900">
+            Quick Links
+          </h2>
+          <ul className="mt-4 space-y-3 text-sm text-slate-600">
             {quickLinks.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} className="transition hover:text-[color:var(--accent)]">
+                <Link href={link.href} className="transition hover:text-emerald-700">
                   {link.label}
                 </Link>
               </li>
@@ -47,25 +48,34 @@ export function SiteFooter() {
         </section>
 
         <section>
-          <h2 className="text-sm font-semibold uppercase tracking-[0.28em] text-white">Contact</h2>
-          <ul className="mt-4 space-y-3 text-sm text-white/60">
-            <li>(206) 555-0199</li>
+          <h2 className="text-sm font-semibold uppercase tracking-[0.28em] text-slate-900">
+            Contact
+          </h2>
+          <ul className="mt-4 space-y-3 text-sm text-slate-600">
             <li>
-              <a href="mailto:hello@summitlandscape.com" className="transition hover:text-[color:var(--accent)]">
-                hello@summitlandscape.com
+              <a href="tel:+12067241936" className="transition hover:text-emerald-700">
+                206.724.1936
               </a>
             </li>
-            <li>Seattle, WA</li>
+            <li>
+              <a
+                href="mailto:jamarrhenaifesh@summitlandscapesolutions.co"
+                className="transition hover:text-emerald-700 break-all"
+              >
+                jamarrhenaifesh@summitlandscapesolutions.co
+              </a>
+            </li>
+            <li>Burien, WA</li>
           </ul>
         </section>
       </div>
 
-      <div className="border-t border-white/5">
-        <div className="mx-auto flex w-full max-w-7xl flex-wrap items-center justify-between gap-3 px-6 py-5 text-xs text-white/30">
-          <p> {new Date().getFullYear()} Summit Landscape Seattle. All rights reserved.</p>
+      <div className="border-t border-slate-200 bg-slate-50">
+        <div className="mx-auto flex w-full max-w-7xl flex-wrap items-center justify-between gap-3 px-6 py-5 text-xs text-slate-500">
+          <p>© {new Date().getFullYear()} Summit Landscape Solutions. All rights reserved.</p>
           <div className="flex items-center gap-4">
             {legalLinks.map((link) => (
-              <Link key={link.href} href={link.href} className="transition hover:text-white/60">
+              <Link key={link.href} href={link.href} className="transition hover:text-slate-900">
                 {link.label}
               </Link>
             ))}

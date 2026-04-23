@@ -22,12 +22,12 @@ export async function generateMetadata({ params }: ServiceDetailPageProps): Prom
 
   if (!result) {
     return {
-      title: "Service | Summit Landscape Seattle",
+      title: "Service | Summit Landscape Solutions",
     };
   }
 
   return {
-    title: `${result.service.name} | Summit Landscape Seattle`,
+    title: `${result.service.name} | Summit Landscape Solutions`,
     description: result.service.summary,
   };
 }
@@ -43,38 +43,66 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
   return (
     <div className="mx-auto w-full max-w-5xl px-6 py-16">
       <nav className="text-sm text-slate-500">
-        <Link href="/services" className="transition hover:text-slate-700">
+        <Link href="/services" className="transition hover:text-emerald-700">
           Services
         </Link>
         <span className="mx-2">/</span>
-        <Link href={`/services/${result.category.slug}`} className="transition hover:text-slate-700">
+        <Link
+          href={`/services/${result.category.slug}`}
+          className="transition hover:text-emerald-700"
+        >
           {result.category.name}
         </Link>
       </nav>
 
-      <h1 className="mt-4 text-4xl font-bold tracking-tight text-slate-900">{result.service.name}</h1>
-      <p className="mt-5 text-lg text-slate-600">{result.service.summary}</p>
+      <p className="mt-6 text-xs font-semibold uppercase tracking-[0.34em] text-emerald-700">
+        {result.category.name}
+      </p>
+      <h1 className="mt-3 font-display text-4xl font-semibold tracking-tight text-slate-900 md:text-5xl">
+        {result.service.name}
+      </h1>
+      <p className="mt-5 max-w-3xl text-lg leading-relaxed text-slate-600">
+        {result.service.summary}
+      </p>
 
-      <section className="mt-10 rounded-2xl border border-slate-200 bg-white p-6">
-        <h2 className="text-xl font-semibold text-slate-900">What&apos;s Included</h2>
-        <ul className="mt-4 list-disc space-y-2 pl-5 text-slate-700">
-          <li>On-site assessment based on Seattle property and weather conditions.</li>
-          <li>Clear scope of work, timeline, and transparent project pricing.</li>
-          <li>Professional execution with cleanup and final walkthrough.</li>
+      <section className="mt-10 rounded-2xl border border-slate-200 bg-white p-7 shadow-[0_8px_24px_rgba(15,23,42,0.05)]">
+        <h2 className="font-display text-2xl font-semibold text-slate-900">
+          What&rsquo;s Included
+        </h2>
+        <ul className="mt-5 space-y-3">
+          {result.service.whatsIncluded.map((item) => (
+            <li key={item} className="flex items-start gap-3 text-slate-700">
+              <span
+                aria-hidden="true"
+                className="mt-2 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-600"
+              />
+              <span className="leading-relaxed">{item}</span>
+            </li>
+          ))}
         </ul>
       </section>
 
-      <section className="mt-8 rounded-2xl bg-slate-900 p-6 text-white">
-        <h2 className="text-2xl font-semibold">Need a quote for this service?</h2>
-        <p className="mt-3 text-slate-300">
-          Contact Summit Landscape Seattle for a no-obligation estimate.
+      <section className="mt-8 rounded-2xl border border-slate-200 bg-emerald-50 p-7">
+        <h2 className="font-display text-2xl font-semibold text-slate-900">
+          Need a quote for this service?
+        </h2>
+        <p className="mt-3 max-w-2xl text-slate-700">
+          Contact Summit Landscape Solutions for a free, no-obligation estimate.
         </p>
-        <Link
-          href="/contact"
-          className="mt-6 inline-block rounded-full bg-white px-5 py-3 font-semibold text-slate-900 transition hover:bg-slate-100"
-        >
-          Request Estimate
-        </Link>
+        <div className="mt-6 flex flex-wrap gap-3">
+          <Link
+            href="/contact"
+            className="rounded-full bg-emerald-700 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-emerald-800"
+          >
+            Request Estimate
+          </Link>
+          <a
+            href="tel:+12067241936"
+            className="rounded-full border border-emerald-700 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-emerald-700 transition hover:bg-emerald-700 hover:text-white"
+          >
+            Call 206.724.1936
+          </a>
+        </div>
       </section>
     </div>
   );

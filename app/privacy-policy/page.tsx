@@ -40,7 +40,7 @@ export default function PrivacyPolicyPage() {
         <section>
           <h2 className="text-xl font-semibold text-slate-900">Contact</h2>
           <p className="mt-2">
-            For privacy questions, contact us at hello@summitlandscape.com.
+            For privacy questions, contact us at jamarrhenaifesh@summitlandscapesolutions.co.
           </p>
         </section>
       </div>

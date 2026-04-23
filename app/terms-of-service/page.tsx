@@ -32,14 +32,14 @@ export default function TermsOfServicePage() {
         <section>
           <h2 className="text-xl font-semibold text-slate-900">Limitation of Liability</h2>
           <p className="mt-2">
-            Summit Landscape Seattle is not liable for indirect or incidental damages related to
+            Summit Landscape Solutions is not liable for indirect or incidental damages related to
             website use.
           </p>
         </section>
         <section>
           <h2 className="text-xl font-semibold text-slate-900">Contact</h2>
           <p className="mt-2">
-            Questions about these terms can be sent to hello@summitlandscape.com.
+            Questions about these terms can be sent to jamarrhenaifesh@summitlandscapesolutions.co.
           </p>
         </section>
       </div>
