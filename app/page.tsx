@@ -42,60 +42,67 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-[color:var(--background)] text-slate-900">
-      <section className="relative isolate overflow-hidden border-b border-slate-200">
-        <Image
-          src="/624D1698-E0BC-4CA3-802D-C4DE71EC7663_4_5005_c.jpeg"
-          alt="Seattle residential landscape installation with layered planting beds"
-          fill
-          priority
-          className="object-cover object-center scale-105"
-          sizes="100vw"
+      <section className="relative isolate overflow-hidden border-b border-slate-200 bg-white">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(4,120,87,0.08),transparent_55%)]"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/55 to-slate-900/15" />
-        <div className="relative mx-auto flex min-h-[640px] w-full max-w-7xl items-center px-6 py-24">
-          <div className="max-w-3xl space-y-7 text-white">
+        <div className="relative mx-auto grid w-full max-w-7xl items-center gap-12 px-6 py-20 md:py-24 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
+          <div className="space-y-7">
             <div className="flex items-center gap-3">
-              <div className="h-px w-12 bg-emerald-300" />
-              <p className="text-xs font-medium uppercase tracking-[0.42em] text-emerald-200">
+              <div className="h-px w-12 bg-emerald-700" />
+              <p className="text-xs font-medium uppercase tracking-[0.42em] text-emerald-700">
                 Burien & Seattle Landscaping
               </p>
             </div>
-            <h1 className="font-display text-5xl font-semibold leading-[1.05] md:text-7xl">
+            <h1 className="font-display text-5xl font-semibold leading-[1.05] text-slate-900 md:text-7xl">
               Landscapes designed to last, built with care.
             </h1>
-            <p className="max-w-2xl text-lg leading-relaxed text-white/85 md:text-xl">
+            <p className="max-w-2xl text-lg leading-relaxed text-slate-600 md:text-xl">
               From Burien to Ballard, Summit Landscape Solutions designs, builds, and maintains
               outdoor spaces that stay clean, functional, and beautiful through every season.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
                 href="/services"
-                className="rounded-full bg-emerald-600 px-7 py-3.5 text-sm font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-emerald-700"
+                className="rounded-full bg-emerald-700 px-7 py-3.5 text-sm font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-emerald-800"
               >
                 View Services
               </Link>
               <Link
                 href="/contact"
-                className="rounded-full border border-white/60 bg-white/10 px-7 py-3.5 text-sm font-semibold uppercase tracking-[0.2em] text-white backdrop-blur-sm transition hover:bg-white/20"
+                className="rounded-full border border-slate-300 bg-white px-7 py-3.5 text-sm font-semibold uppercase tracking-[0.2em] text-slate-800 transition hover:border-emerald-700 hover:text-emerald-700"
               >
                 Request a Quote
               </Link>
             </div>
 
             <div className="grid max-w-2xl grid-cols-1 gap-3 pt-4 sm:grid-cols-3">
-              <div className="rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur-sm">
-                <p className="font-display text-3xl font-semibold text-white">15+</p>
-                <p className="mt-1 text-xs uppercase tracking-[0.22em] text-white/75">Years Experience</p>
+              <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_4px_14px_rgba(15,23,42,0.04)]">
+                <p className="font-display text-3xl font-semibold text-slate-900">15+</p>
+                <p className="mt-1 text-xs uppercase tracking-[0.22em] text-slate-500">Years Experience</p>
               </div>
-              <div className="rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur-sm">
-                <p className="font-display text-3xl font-semibold text-white">18</p>
-                <p className="mt-1 text-xs uppercase tracking-[0.22em] text-white/75">Service Areas</p>
+              <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_4px_14px_rgba(15,23,42,0.04)]">
+                <p className="font-display text-3xl font-semibold text-slate-900">18</p>
+                <p className="mt-1 text-xs uppercase tracking-[0.22em] text-slate-500">Service Areas</p>
               </div>
-              <div className="rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur-sm">
-                <p className="font-display text-3xl font-semibold text-white">100%</p>
-                <p className="mt-1 text-xs uppercase tracking-[0.22em] text-white/75">Custom Plans</p>
+              <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_4px_14px_rgba(15,23,42,0.04)]">
+                <p className="font-display text-3xl font-semibold text-slate-900">100%</p>
+                <p className="mt-1 text-xs uppercase tracking-[0.22em] text-slate-500">Custom Plans</p>
               </div>
             </div>
+          </div>
+
+          <div className="relative mx-auto w-full max-w-md lg:max-w-none">
+            <Image
+              src="/summit-logo.png"
+              alt="Summit Landscape Solutions LLC — Residential & Commercial, Seattle, WA"
+              width={1024}
+              height={1024}
+              priority
+              className="mx-auto h-auto w-full max-w-[460px] object-contain drop-shadow-[0_18px_40px_rgba(15,23,42,0.18)] lg:max-w-[520px]"
+              sizes="(min-width: 1024px) 520px, (min-width: 640px) 460px, 80vw"
+            />
           </div>
         </div>
       </section>

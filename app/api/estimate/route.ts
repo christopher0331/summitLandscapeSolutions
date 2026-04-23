@@ -177,8 +177,10 @@ ${propertyType ? `Property type: ${propertyType}\n` : ""}${serviceInterest ? `Se
 Submitted at (PT): ${submittedAt}
 ${message ? `\nProject details:\n${message}\n` : ""}`;
 
+  const isProduction = process.env.NODE_ENV === "production";
+
   try {
-    const { error } = await resend.emails.send({
+    const { data, error } = await resend.emails.send({
       from: `Summit Landscape Website <${fromEmail}>`,
       to: [toEmail],
       replyTo: email,
@@ -188,18 +190,33 @@ ${message ? `\nProject details:\n${message}\n` : ""}`;
     });
 
     if (error) {
-      console.error("Resend send error:", error);
+      console.error("Resend send error:", {
+        name: error.name,
+        message: error.message,
+        from: fromEmail,
+        to: toEmail,
+      });
       return NextResponse.json(
-        { error: "Failed to send. Please try again or contact us directly." },
+        {
+          error: "Failed to send. Please try again or contact us directly.",
+          ...(isProduction
+            ? {}
+            : { debug: { name: error.name, message: error.message, from: fromEmail, to: toEmail } }),
+        },
         { status: 502 },
       );
     }
 
+    console.log("Resend message sent:", { id: data?.id, to: toEmail, from: fromEmail });
     return NextResponse.json({ ok: true });
   } catch (err) {
-    console.error("Estimate route exception:", err);
+    const message = err instanceof Error ? err.message : String(err);
+    console.error("Estimate route exception:", { message, from: fromEmail, to: toEmail });
     return NextResponse.json(
-      { error: "Unexpected server error. Please contact us directly." },
+      {
+        error: "Unexpected server error. Please contact us directly.",
+        ...(isProduction ? {} : { debug: { message, from: fromEmail, to: toEmail } }),
+      },
       { status: 500 },
     );
   }
