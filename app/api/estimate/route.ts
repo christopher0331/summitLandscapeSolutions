@@ -7,13 +7,9 @@ type EstimatePayload = {
   name?: string;
   email?: string;
   phone?: string;
-  address?: string;
-  city?: string;
-  zip?: string;
   propertyType?: string;
   serviceInterest?: string;
   timeline?: string;
-  budget?: string;
   hearAboutUs?: string;
   message?: string;
   source?: string;
@@ -83,13 +79,9 @@ export async function POST(request: Request) {
   const name = body.name?.trim() ?? "";
   const email = body.email?.trim() ?? "";
   const phone = body.phone?.trim() ?? "";
-  const address = body.address?.trim() ?? "";
-  const city = body.city?.trim() ?? "";
-  const zip = body.zip?.trim() ?? "";
   const propertyType = body.propertyType?.trim() ?? "";
   const serviceInterest = body.serviceInterest?.trim() ?? "";
   const timeline = body.timeline?.trim() ?? "";
-  const budget = body.budget?.trim() ?? "";
   const hearAboutUs = body.hearAboutUs?.trim() ?? "";
   const message = body.message?.trim() ?? "";
   const source = body.source?.trim() ?? "Website";
@@ -102,7 +94,6 @@ export async function POST(request: Request) {
     errors.email = "Please enter a valid email address.";
   }
   if (!phone) errors.phone = "Phone is required.";
-  if (!message) errors.message = "Please share a few project details.";
 
   if (serviceInterest && !SERVICE_OPTIONS.has(serviceInterest)) {
     errors.serviceInterest = "Invalid service selection.";
@@ -142,8 +133,6 @@ export async function POST(request: Request) {
     timeStyle: "short",
   });
 
-  const fullAddress = [address, city, zip].filter(Boolean).join(", ");
-
   const html = `<!doctype html>
 <html>
   <body style="margin:0;padding:24px;background:#f1f5f9;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#0f172a;">
@@ -158,19 +147,21 @@ export async function POST(request: Request) {
           ${row("Name", name)}
           ${row("Email", email)}
           ${row("Phone", phone)}
-          ${row("Property Address", fullAddress || undefined)}
           ${row("Property Type", propertyType)}
           ${row("Service Interest", serviceInterest)}
           ${row("Timeline", timeline)}
-          ${row("Estimated Budget", budget)}
           ${row("How They Heard", hearAboutUs)}
           ${row("Submitted From", source)}
           ${row("Submitted At (PT)", submittedAt)}
         </table>
-        <div style="margin-top:24px;padding:16px 18px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;">
+        ${
+          message
+            ? `<div style="margin-top:24px;padding:16px 18px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;">
           <p style="margin:0 0 8px;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#047857;font-weight:600;">Project Details</p>
           <p style="margin:0;font-size:14px;line-height:1.6;color:#0f172a;white-space:pre-wrap;">${escapeHtml(message)}</p>
-        </div>
+        </div>`
+            : ""
+        }
         <p style="margin:24px 0 0;font-size:12px;color:#64748b;">Reply directly to this email to respond to ${escapeHtml(name)}.</p>
       </div>
     </div>
@@ -182,12 +173,9 @@ export async function POST(request: Request) {
 Name: ${name}
 Email: ${email}
 Phone: ${phone}
-${fullAddress ? `Address: ${fullAddress}\n` : ""}${propertyType ? `Property type: ${propertyType}\n` : ""}${serviceInterest ? `Service interest: ${serviceInterest}\n` : ""}${timeline ? `Timeline: ${timeline}\n` : ""}${budget ? `Budget: ${budget}\n` : ""}${hearAboutUs ? `How they heard: ${hearAboutUs}\n` : ""}Submitted from: ${source}
+${propertyType ? `Property type: ${propertyType}\n` : ""}${serviceInterest ? `Service interest: ${serviceInterest}\n` : ""}${timeline ? `Timeline: ${timeline}\n` : ""}${hearAboutUs ? `How they heard: ${hearAboutUs}\n` : ""}Submitted from: ${source}
 Submitted at (PT): ${submittedAt}
-
-Project details:
-${message}
-`;
+${message ? `\nProject details:\n${message}\n` : ""}`;
 
   try {
     const { error } = await resend.emails.send({

@@ -15,13 +15,9 @@ type FormState = {
   name: string;
   email: string;
   phone: string;
-  address: string;
-  city: string;
-  zip: string;
   propertyType: string;
   serviceInterest: string;
   timeline: string;
-  budget: string;
   hearAboutUs: string;
   message: string;
   website: string;
@@ -60,16 +56,6 @@ const PROPERTY_OPTIONS = [
   { value: "multi-family", label: "Multi-Family" },
 ];
 
-const BUDGET_OPTIONS = [
-  { value: "", label: "Select range (optional)" },
-  { value: "under-2500", label: "Under $2,500" },
-  { value: "2500-7500", label: "$2,500 – $7,500" },
-  { value: "7500-15000", label: "$7,500 – $15,000" },
-  { value: "15000-30000", label: "$15,000 – $30,000" },
-  { value: "30000-plus", label: "$30,000+" },
-  { value: "unsure", label: "Not sure yet" },
-];
-
 const HEAR_OPTIONS = [
   { value: "", label: "How did you hear about us? (optional)" },
   { value: "google", label: "Google search" },
@@ -84,13 +70,9 @@ const initialState: FormState = {
   name: "",
   email: "",
   phone: "",
-  address: "",
-  city: "",
-  zip: "",
   propertyType: "",
   serviceInterest: "",
   timeline: "",
-  budget: "",
   hearAboutUs: "",
   message: "",
   website: "",
@@ -281,55 +263,6 @@ export function EstimateForm({
 
       {!compact && (
         <>
-          <div className="grid gap-4 md:grid-cols-[1.6fr_1fr_0.8fr]">
-            <div>
-              <label className={labelClass} htmlFor="address">
-                Property Address
-              </label>
-              <input
-                id="address"
-                name="address"
-                type="text"
-                autoComplete="street-address"
-                value={state.address}
-                onChange={handleChange}
-                placeholder="123 Main St"
-                className={`mt-1.5 ${baseField}`}
-              />
-            </div>
-            <div>
-              <label className={labelClass} htmlFor="city">
-                City
-              </label>
-              <input
-                id="city"
-                name="city"
-                type="text"
-                autoComplete="address-level2"
-                value={state.city}
-                onChange={handleChange}
-                placeholder="Burien"
-                className={`mt-1.5 ${baseField}`}
-              />
-            </div>
-            <div>
-              <label className={labelClass} htmlFor="zip">
-                ZIP
-              </label>
-              <input
-                id="zip"
-                name="zip"
-                type="text"
-                inputMode="numeric"
-                autoComplete="postal-code"
-                value={state.zip}
-                onChange={handleChange}
-                placeholder="98166"
-                className={`mt-1.5 ${baseField}`}
-              />
-            </div>
-          </div>
-
           <div className="grid gap-4 md:grid-cols-2">
             <div>
               <label className={labelClass} htmlFor="propertyType">
@@ -389,42 +322,23 @@ export function EstimateForm({
               </select>
             </div>
             <div>
-              <label className={labelClass} htmlFor="budget">
-                Estimated Budget
+              <label className={labelClass} htmlFor="hearAboutUs">
+                How did you hear about us?
               </label>
               <select
-                id="budget"
-                name="budget"
-                value={state.budget}
+                id="hearAboutUs"
+                name="hearAboutUs"
+                value={state.hearAboutUs}
                 onChange={handleChange}
                 className={`mt-1.5 ${baseField}`}
               >
-                {BUDGET_OPTIONS.map((option) => (
+                {HEAR_OPTIONS.map((option) => (
                   <option key={option.value} value={option.value}>
                     {option.label}
                   </option>
                 ))}
               </select>
             </div>
-          </div>
-
-          <div>
-            <label className={labelClass} htmlFor="hearAboutUs">
-              How did you hear about us?
-            </label>
-            <select
-              id="hearAboutUs"
-              name="hearAboutUs"
-              value={state.hearAboutUs}
-              onChange={handleChange}
-              className={`mt-1.5 ${baseField}`}
-            >
-              {HEAR_OPTIONS.map((option) => (
-                <option key={option.value} value={option.value}>
-                  {option.label}
-                </option>
-              ))}
-            </select>
           </div>
         </>
       )}
@@ -452,16 +366,15 @@ export function EstimateForm({
 
       <div>
         <label className={labelClass} htmlFor="message">
-          Project Details <span className="text-rose-500">*</span>
+          Project Details
         </label>
         <textarea
           id="message"
           name="message"
-          required
           rows={compact ? 3 : 5}
           value={state.message}
           onChange={handleChange}
-          placeholder="Tell us a bit about your property, goals, and any specific challenges (drainage, slopes, existing landscaping, etc.)."
+          placeholder="Tell us a bit about your property, goals, and any specific challenges (drainage, slopes, existing landscaping, etc.) — optional."
           className={`mt-1.5 ${baseField} resize-y`}
         />
         {fieldErrors.message && <p className={errorClass}>{fieldErrors.message}</p>}
