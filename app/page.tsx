@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { EstimateForm } from "./components/estimate-form";
 import { serviceCategories } from "./lib/service-data";
 
 export default function Home() {
@@ -318,25 +319,45 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-7xl px-6 py-20">
-        <div className="rounded-3xl border border-slate-200 bg-white px-8 py-10 shadow-[0_8px_24px_rgba(15,23,42,0.05)] md:flex md:items-center md:justify-between">
+      <section id="estimate" className="mx-auto w-full max-w-7xl px-6 py-20">
+        <div className="grid gap-10 rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_8px_24px_rgba(15,23,42,0.05)] md:p-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.34em] text-emerald-700">
               Start Your Project
             </p>
-            <h2 className="mt-3 font-display text-4xl font-semibold tracking-tight text-slate-900">
+            <h2 className="mt-3 font-display text-4xl font-semibold tracking-tight text-slate-900 md:text-5xl">
               Ready to upgrade your landscape?
             </h2>
-            <p className="mt-3 max-w-2xl text-slate-600">
-              Schedule a free consultation for your home or commercial property.
+            <p className="mt-4 max-w-md leading-relaxed text-slate-600">
+              Send us a few quick details and we&rsquo;ll follow up within one business day to
+              schedule a free on-site consultation for your home or commercial property.
+            </p>
+            <ul className="mt-6 space-y-2 text-sm text-slate-600">
+              <li className="flex items-start gap-2">
+                <span className="mt-1.5 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-600" />
+                Free, no-obligation estimates
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-1.5 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-600" />
+                Response within one business day
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-1.5 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-600" />
+                Transparent pricing, no upselling
+              </li>
+            </ul>
+            <p className="mt-6 text-xs text-slate-500">
+              Prefer a longer form?{" "}
+              <Link
+                href="/contact#estimate"
+                className="font-semibold text-emerald-700 hover:text-emerald-800"
+              >
+                Use our full estimate form
+              </Link>
+              .
             </p>
           </div>
-          <a
-            href="mailto:jamarrhenaifesh@summitlandscapesolutions.co"
-            className="mt-6 inline-block rounded-full bg-emerald-700 px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-emerald-800 md:mt-0"
-          >
-            Email Us
-          </a>
+          <EstimateForm variant="compact" source="Homepage CTA" />
         </div>
       </section>
     </div>

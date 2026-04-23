@@ -138,10 +138,10 @@ export default function FaqPage() {
                 installation or just want to discuss options, we&rsquo;re here to help.
               </p>
               <Link
-                href="/contact"
+                href="/contact#estimate"
                 className="mt-6 inline-block rounded-full bg-emerald-700 px-6 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-emerald-800"
               >
-                Contact Us
+                Request Estimate
               </Link>
             </div>
 
@@ -174,15 +174,23 @@ export default function FaqPage() {
               Ready to get started?
             </h2>
             <p className="mt-3 max-w-2xl text-slate-600">
-              Schedule a free on-site consultation for your home or commercial property.
+              Send us a few details and we&rsquo;ll schedule a free on-site consultation.
             </p>
           </div>
-          <a
-            href="mailto:jamarrhenaifesh@summitlandscapesolutions.co"
-            className="mt-6 inline-block rounded-full bg-emerald-700 px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-emerald-800 md:mt-0"
-          >
-            Email Us
-          </a>
+          <div className="mt-6 flex flex-wrap gap-3 md:mt-0">
+            <Link
+              href="/contact#estimate"
+              className="inline-block rounded-full bg-emerald-700 px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-emerald-800"
+            >
+              Request Estimate
+            </Link>
+            <a
+              href="tel:+12067241936"
+              className="inline-block rounded-full border border-emerald-700 px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.2em] text-emerald-700 transition hover:bg-emerald-700 hover:text-white"
+            >
+              Call 206.724.1936
+            </a>
+          </div>
         </div>
       </section>
     </div>

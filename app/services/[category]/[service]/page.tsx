@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { EstimateForm } from "../../../components/estimate-form";
 import { getServiceBySlugs, serviceCategories } from "../../../lib/service-data";
 
 type ServiceDetailPageProps = {
@@ -82,27 +83,44 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
         </ul>
       </section>
 
-      <section className="mt-8 rounded-2xl border border-slate-200 bg-emerald-50 p-7">
-        <h2 className="font-display text-2xl font-semibold text-slate-900">
-          Need a quote for this service?
-        </h2>
-        <p className="mt-3 max-w-2xl text-slate-700">
-          Contact Summit Landscape Solutions for a free, no-obligation estimate.
+      <section
+        id="estimate"
+        className="mt-10 rounded-2xl border border-slate-200 bg-white p-7 shadow-[0_8px_24px_rgba(15,23,42,0.05)] md:p-8"
+      >
+        <p className="text-xs font-semibold uppercase tracking-[0.34em] text-emerald-700">
+          Free Estimate
         </p>
-        <div className="mt-6 flex flex-wrap gap-3">
+        <h2 className="mt-3 font-display text-2xl font-semibold text-slate-900">
+          Request a quote for {result.service.name.toLowerCase()}.
+        </h2>
+        <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate-600">
+          Share a few details and we&rsquo;ll follow up within one business day to schedule a
+          free on-site consultation.
+        </p>
+        <div className="mt-6">
+          <EstimateForm
+            variant="compact"
+            source={`Service: ${result.service.name}`}
+            defaultServiceInterest={result.service.slug}
+          />
+        </div>
+        <p className="mt-6 text-xs text-slate-500">
+          Prefer a longer form?{" "}
           <Link
-            href="/contact"
-            className="rounded-full bg-emerald-700 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-emerald-800"
+            href="/contact#estimate"
+            className="font-semibold text-emerald-700 hover:text-emerald-800"
           >
-            Request Estimate
-          </Link>
+            Use our full estimate form
+          </Link>{" "}
+          or call{" "}
           <a
             href="tel:+12067241936"
-            className="rounded-full border border-emerald-700 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-emerald-700 transition hover:bg-emerald-700 hover:text-white"
+            className="font-semibold text-emerald-700 hover:text-emerald-800"
           >
-            Call 206.724.1936
+            206.724.1936
           </a>
-        </div>
+          .
+        </p>
       </section>
     </div>
   );
