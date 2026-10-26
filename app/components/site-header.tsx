@@ -69,6 +69,14 @@ export function SiteHeader() {
                     </ul>
                   </section>
                 ))}
+                <section className="rounded-xl border border-slate-200 bg-slate-50/60 p-4">
+                  <Link
+                    href="/services/siding"
+                    className="font-display text-base text-emerald-700 transition hover:text-emerald-800"
+                  >
+                    Siding
+                  </Link>
+                </section>
               </div>
             </div>
           </div>

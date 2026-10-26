@@ -35,6 +35,7 @@ const SERVICE_OPTIONS = [
   { value: "landscape-design", label: "Landscape Design" },
   { value: "planting-installation", label: "Planting Installation" },
   { value: "sod-turf-installation", label: "Sod & Turf Installation" },
+  { value: "siding", label: "Siding" },
   { value: "general-inquiry", label: "General Inquiry" },
   { value: "other", label: "Other / Not Sure" },
 ];

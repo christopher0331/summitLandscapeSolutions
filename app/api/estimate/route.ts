@@ -28,6 +28,7 @@ const SERVICE_OPTIONS = new Set([
   "landscape-design",
   "planting-installation",
   "sod-turf-installation",
+  "siding",
   "general-inquiry",
   "other",
 ]);

@@ -45,6 +45,19 @@ export default function ServicesPage() {
             </ul>
           </article>
         ))}
+        <article className="rounded-2xl border border-slate-200 bg-white p-6">
+          <h2 className="text-2xl font-semibold text-slate-900">Siding</h2>
+          <p className="mt-3 text-slate-600">
+            Siding planning and installation, with attention to how your exterior meets the
+            landscape around it.
+          </p>
+          <Link
+            href="/services/siding"
+            className="mt-5 inline-block font-semibold text-slate-900 transition hover:text-emerald-700"
+          >
+            View Siding
+          </Link>
+        </article>
       </div>
     </div>
   );
