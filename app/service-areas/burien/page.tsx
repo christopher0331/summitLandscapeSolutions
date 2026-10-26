@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   description:
     "Professional lawn care, hardscaping, and landscaping in Burien. Serving downtown Burien, Shorewood, Gregory Heights, and nearby neighborhoods.",
   alternates: {
-    canonical: "https://www.summitlandscapeseattle.com/service-areas/burien",
+    canonical: "https://summitlandscapesolutions.co/service-areas/burien",
   },
 };
 

@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   description:
     "Professional lawn care, hardscaping, and landscaping in Madrona, Seattle. Serving Madrona Village, Leschi border, and nearby neighborhoods.",
   alternates: {
-    canonical: "https://www.summitlandscapeseattle.com/service-areas/madrona",
+    canonical: "https://summitlandscapesolutions.co/service-areas/madrona",
   },
 };
 

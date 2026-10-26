@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   description:
     "Professional lawn care, hardscaping, and landscaping in Renton. Serving downtown Renton, Highlands, Fairwood, and nearby neighborhoods.",
   alternates: {
-    canonical: "https://www.summitlandscapeseattle.com/service-areas/renton",
+    canonical: "https://summitlandscapesolutions.co/service-areas/renton",
   },
 };
 

@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   description:
     "Professional lawn care, hardscaping, and landscaping in Rainier Valley, Seattle. Serving Columbia City, Mount Baker, Seward Park, and nearby neighborhoods.",
   alternates: {
-    canonical: "https://www.summitlandscapeseattle.com/service-areas/rainier-valley",
+    canonical: "https://summitlandscapesolutions.co/service-areas/rainier-valley",
   },
 };
 

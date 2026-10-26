@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   description:
     "Professional lawn care, hardscaping, and landscaping in Seattle's Green Lake area. Serving East/West Green Lake, Tangletown, and nearby neighborhoods.",
   alternates: {
-    canonical: "https://www.summitlandscapeseattle.com/service-areas/green-lake",
+    canonical: "https://summitlandscapesolutions.co/service-areas/green-lake",
   },
 };
 

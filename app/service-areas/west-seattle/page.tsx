@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   description:
     "Professional lawn care, hardscaping, and landscaping in West Seattle. Serving Admiral, Alki, Junction, Fauntleroy, and nearby neighborhoods.",
   alternates: {
-    canonical: "https://www.summitlandscapeseattle.com/service-areas/west-seattle",
+    canonical: "https://summitlandscapesolutions.co/service-areas/west-seattle",
   },
 };
 

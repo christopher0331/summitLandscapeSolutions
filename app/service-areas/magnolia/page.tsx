@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   description:
     "Professional lawn care, hardscaping, and landscaping in Magnolia, Seattle. Serving Uptown Magnolia, Lawtonwood, Discovery Park area, and nearby neighborhoods.",
   alternates: {
-    canonical: "https://www.summitlandscapeseattle.com/service-areas/magnolia",
+    canonical: "https://summitlandscapesolutions.co/service-areas/magnolia",
   },
 };
 

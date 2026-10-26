@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { allServiceAreas } from "./lib/service-area-data";
 import { serviceCategories } from "./lib/service-data";
 
-const baseUrl = "https://www.summitlandscapeseattle.com";
+const baseUrl = "https://summitlandscapesolutions.co";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
