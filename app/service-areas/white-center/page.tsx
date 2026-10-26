@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   description:
     "Professional lawn care, hardscaping, and landscaping in White Center. Serving downtown White Center, Roxbury corridor, and nearby neighborhoods.",
   alternates: {
-    canonical: "https://www.summitlandscapeseattle.com/service-areas/white-center",
+    canonical: "https://summitlandscapesolutions.co/service-areas/white-center",
   },
 };
 

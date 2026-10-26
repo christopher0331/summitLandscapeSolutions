@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   description:
     "Professional lawn care, hardscaping, and landscaping in Beacon Hill, Seattle. Serving north, mid, and south Beacon Hill neighborhoods.",
   alternates: {
-    canonical: "https://www.summitlandscapeseattle.com/service-areas/beacon-hill",
+    canonical: "https://summitlandscapesolutions.co/service-areas/beacon-hill",
   },
 };
 

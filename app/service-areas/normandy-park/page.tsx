@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   description:
     "Professional lawn care, hardscaping, and landscaping in Normandy Park. Serving Marine View corridor, core neighborhoods, and nearby residential areas.",
   alternates: {
-    canonical: "https://www.summitlandscapeseattle.com/service-areas/normandy-park",
+    canonical: "https://summitlandscapesolutions.co/service-areas/normandy-park",
   },
 };
 

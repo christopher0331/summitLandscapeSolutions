@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   description:
     "Professional lawn care, hardscaping, and landscaping in Queen Anne, Seattle. Serving upper and lower Queen Anne neighborhoods.",
   alternates: {
-    canonical: "https://www.summitlandscapeseattle.com/service-areas/queen-anne",
+    canonical: "https://summitlandscapesolutions.co/service-areas/queen-anne",
   },
 };
 

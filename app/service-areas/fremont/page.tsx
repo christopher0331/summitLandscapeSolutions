@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   description:
     "Professional lawn care, hardscaping, and landscaping in Fremont, Seattle. Serving central Fremont, canal-edge properties, and nearby neighborhoods.",
   alternates: {
-    canonical: "https://www.summitlandscapeseattle.com/service-areas/fremont",
+    canonical: "https://summitlandscapesolutions.co/service-areas/fremont",
   },
 };
 

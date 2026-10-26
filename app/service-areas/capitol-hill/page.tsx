@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   description:
     "Professional lawn care, hardscaping, and landscaping in Capitol Hill, Seattle. Serving Broadway, Pike/Pine, Volunteer Park, and nearby blocks.",
   alternates: {
-    canonical: "https://www.summitlandscapeseattle.com/service-areas/capitol-hill",
+    canonical: "https://summitlandscapesolutions.co/service-areas/capitol-hill",
   },
 };
 

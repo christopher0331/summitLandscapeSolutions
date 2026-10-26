@@ -16,6 +16,7 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://summitlandscapesolutions.co"),
   title: "Summit Landscape Seattle | Landscaping Services",
   description:
     "Seattle landscaping company website boilerplate with common business pages, service details, and contact information.",

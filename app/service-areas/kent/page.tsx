@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   description:
     "Professional lawn care, hardscaping, and landscaping in Kent. Serving downtown Kent, East Hill, West Hill, and nearby neighborhoods.",
   alternates: {
-    canonical: "https://www.summitlandscapeseattle.com/service-areas/kent",
+    canonical: "https://summitlandscapesolutions.co/service-areas/kent",
   },
 };
 

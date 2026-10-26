@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   description:
     "Professional lawn care, hardscaping, and landscaping in Ballard, Seattle. Serving Old Ballard, Sunset Hill, Loyal Heights, and nearby neighborhoods.",
   alternates: {
-    canonical: "https://www.summitlandscapeseattle.com/service-areas/ballard",
+    canonical: "https://summitlandscapesolutions.co/service-areas/ballard",
   },
 };
 
