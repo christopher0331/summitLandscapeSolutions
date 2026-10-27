@@ -103,6 +103,11 @@ export const serviceAreaSegments: ServiceAreaSegment[] = [
         slug: "normandy-park",
         summary: "Premium landscaping and property upkeep in Normandy Park.",
       },
+      {
+        name: "SeaTac",
+        slug: "seatac",
+        summary: "Lawn care, hardscaping, and landscaping for SeaTac homes and properties.",
+      },
     ],
   },
 ];

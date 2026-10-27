@@ -5,7 +5,7 @@ import { serviceAreaSegments } from "../lib/service-area-data";
 export const metadata: Metadata = {
   title: "Service Areas | Summit Landscape Seattle",
   description:
-    "Summit Landscape serves Seattle neighborhoods and nearby communities including West Seattle, White Center, Burien, Tukwila, Renton, Des Moines, Kent, and Normandy Park.",
+    "Summit Landscape serves Seattle neighborhoods and nearby communities including West Seattle, White Center, Burien, Tukwila, Renton, Des Moines, Kent, Normandy Park, and SeaTac.",
 };
 
 export default function ServiceAreasPage() {
