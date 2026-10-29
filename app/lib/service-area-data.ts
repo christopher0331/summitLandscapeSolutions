@@ -63,6 +63,11 @@ export const serviceAreaSegments: ServiceAreaSegment[] = [
         slug: "rainier-valley",
         summary: "Seasonal cleanup, lawn care, and planting services in Rainier Valley.",
       },
+      {
+        name: "South Park",
+        slug: "south-park",
+        summary: "Drainage-aware landscaping, lawn care, and hardscaping in South Park.",
+      },
     ],
   },
   {
