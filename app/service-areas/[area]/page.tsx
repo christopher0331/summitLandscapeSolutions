@@ -20,6 +20,7 @@ export async function generateStaticParams() {
         area.slug !== "fremont" &&
         area.slug !== "green-lake" &&
         area.slug !== "kent" &&
+        area.slug !== "south-park" &&
         area.slug !== "magnolia" &&
         area.slug !== "madrona" &&
         area.slug !== "normandy-park" &&
