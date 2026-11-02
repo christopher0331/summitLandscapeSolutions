@@ -118,6 +118,11 @@ export const serviceAreaSegments: ServiceAreaSegment[] = [
         slug: "seatac",
         summary: "Lawn care, hardscaping, and landscaping for SeaTac homes and properties.",
       },
+      {
+        name: "Federal Way",
+        slug: "federal-way",
+        summary: "Lawn care, hardscaping, and landscaping for Federal Way homes and properties.",
+      },
     ],
   },
 ];
