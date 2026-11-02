@@ -29,7 +29,8 @@ export async function generateStaticParams() {
         area.slug !== "renton" &&
         area.slug !== "seatac" &&
         area.slug !== "tukwila" &&
-        area.slug !== "white-center",
+        area.slug !== "white-center" &&
+        area.slug !== "federal-way",
     )
     .map((area) => ({ area: area.slug }));
 }
