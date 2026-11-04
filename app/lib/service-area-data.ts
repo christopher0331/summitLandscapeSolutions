@@ -59,6 +59,11 @@ export const serviceAreaSegments: ServiceAreaSegment[] = [
         summary: "Custom landscape enhancements and recurring maintenance in Madrona.",
       },
       {
+        name: "Mount Baker",
+        slug: "mount-baker",
+        summary: "Lawn care, hardscaping, and landscaping for Mount Baker homes and hillside properties.",
+      },
+      {
         name: "Rainier Valley",
         slug: "rainier-valley",
         summary: "Seasonal cleanup, lawn care, and planting services in Rainier Valley.",
