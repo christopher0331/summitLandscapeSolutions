@@ -16,6 +16,7 @@ export async function generateStaticParams() {
         area.slug !== "beacon-hill" &&
         area.slug !== "burien" &&
         area.slug !== "capitol-hill" &&
+        area.slug !== "columbia-city" &&
         area.slug !== "des-moines" &&
         area.slug !== "fremont" &&
         area.slug !== "green-lake" &&

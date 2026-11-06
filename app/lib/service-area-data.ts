@@ -73,6 +73,11 @@ export const serviceAreaSegments: ServiceAreaSegment[] = [
         slug: "georgetown",
         summary: "Small-lot landscaping, hardscaping, and frontage upkeep in Georgetown.",
       },
+      {
+        name: "Columbia City",
+        slug: "columbia-city",
+        summary: "Lawn care, hardscaping, and landscaping for Columbia City homes and historic-district properties.",
+      },
     ],
   },
   {
