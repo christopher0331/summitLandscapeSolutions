@@ -27,6 +27,7 @@ export async function generateStaticParams() {
         area.slug !== "normandy-park" &&
         area.slug !== "queen-anne" &&
         area.slug !== "rainier-valley" &&
+        area.slug !== "seward-park" &&
         area.slug !== "renton" &&
         area.slug !== "seatac" &&
         area.slug !== "tukwila" &&
