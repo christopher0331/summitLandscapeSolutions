@@ -19,6 +19,11 @@ export const serviceAreaSegments: ServiceAreaSegment[] = [
         summary: "Lawn, landscape, and hardscape services throughout West Seattle.",
       },
       {
+        name: "Alki",
+        slug: "alki",
+        summary: "Lawn care, hardscaping, and landscaping for Alki homes and properties near Alki Beach and Alki Point.",
+      },
+      {
         name: "Ballard",
         slug: "ballard",
         summary: "Landscape design and maintenance support for Ballard properties.",
