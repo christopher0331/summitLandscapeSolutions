@@ -100,6 +100,18 @@ export const serviceCategories: ServiceCategory[] = [
         ],
       },
       {
+        name: "Drainage and Erosion Control",
+        slug: "drainage-erosion-control",
+        summary:
+          "Practical drainage, French drain, and erosion-control solutions based on water flow, grading, and soil conditions.",
+        whatsIncluded: [
+          "On-site evaluation of water flow, grading, and soil conditions before we recommend a scope.",
+          "Practical drainage, French drain, or erosion-control recommendations suited to the property.",
+          "Coordination with related hardscape or planting work when slope or runoff needs to be handled together.",
+          "A clear written recommendation and quote after the site visit.",
+        ],
+      },
+      {
         name: "Outdoor Living Features",
         slug: "outdoor-living-features",
         summary:
