@@ -31,6 +31,7 @@ const SERVICE_OPTIONS = [
   { value: "seasonal-yard-cleanups", label: "Seasonal Yard Cleanup" },
   { value: "paver-patios-walkways", label: "Pavers, Patios & Walkways" },
   { value: "retaining-walls", label: "Retaining Walls" },
+  { value: "drainage-erosion-control", label: "Drainage and Erosion Control" },
   { value: "outdoor-living-features", label: "Outdoor Living Features" },
   { value: "landscape-design", label: "Landscape Design" },
   { value: "planting-installation", label: "Planting Installation" },
