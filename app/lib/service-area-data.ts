@@ -49,6 +49,11 @@ export const serviceAreaSegments: ServiceAreaSegment[] = [
         summary: "Professional lawn and landscape service for Queen Anne properties.",
       },
       {
+        name: "Seward Park",
+        slug: "seward-park",
+        summary: "Lawn care, hardscaping, and landscaping for Seward Park homes near Lake Washington.",
+      },
+      {
         name: "Beacon Hill",
         slug: "beacon-hill",
         summary: "Reliable property maintenance and landscape improvements in Beacon Hill.",
