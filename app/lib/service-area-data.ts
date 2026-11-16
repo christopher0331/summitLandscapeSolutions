@@ -81,7 +81,7 @@ export const serviceAreaSegments: ServiceAreaSegment[] = [
       {
         name: "South Park",
         slug: "south-park",
-        summary: "Drainage-aware landscaping, lawn care, and hardscaping in South Park.",
+        summary: "Landscaping, lawn care, and hardscaping in South Park.",
       },
       {
         name: "Georgetown",
