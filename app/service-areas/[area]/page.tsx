@@ -12,6 +12,7 @@ export async function generateStaticParams() {
     .filter(
       (area) =>
         area.slug !== "west-seattle" &&
+        area.slug !== "alki" &&
         area.slug !== "ballard" &&
         area.slug !== "beacon-hill" &&
         area.slug !== "burien" &&
