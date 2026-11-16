@@ -33,6 +33,7 @@ const SERVICE_OPTIONS = [
   { value: "retaining-walls", label: "Retaining Walls" },
   { value: "outdoor-living-features", label: "Outdoor Living Features" },
   { value: "landscape-design", label: "Landscape Design" },
+  { value: "design-build", label: "Design-Build" },
   { value: "planting-installation", label: "Planting Installation" },
   { value: "sod-turf-installation", label: "Sod & Turf Installation" },
   { value: "general-inquiry", label: "General Inquiry" },
