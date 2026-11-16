@@ -10,10 +10,15 @@ type ServiceDetailPageProps = {
 
 export async function generateStaticParams() {
   return serviceCategories.flatMap((category) =>
-    category.services.map((service) => ({
-      category: category.slug,
-      service: service.slug,
-    })),
+    category.services
+      .filter(
+        (service) =>
+          !(category.slug === "landscaping" && service.slug === "design-build"),
+      )
+      .map((service) => ({
+        category: category.slug,
+        service: service.slug,
+      })),
   );
 }
 

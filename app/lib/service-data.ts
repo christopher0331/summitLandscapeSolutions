@@ -155,6 +155,18 @@ export const serviceCategories: ServiceCategory[] = [
           "Detail-driven execution, complete site cleanup, and a final walkthrough focused on quality, establishment, and lasting results.",
         ],
       },
+      {
+        name: "Design-Build",
+        slug: "design-build",
+        summary:
+          "One team manages the project from concept through installation, or installs from plans provided by a landscape architect you have already engaged.",
+        whatsIncluded: [
+          "A single team that can manage the full project from concept through installation.",
+          "The option to execute plans provided by a landscape architect you have already engaged.",
+          "A site visit to review conditions, goals, and budget before we recommend a scope.",
+          "Installation work covered by a written agreement that outlines scope, materials, timeline, and pricing.",
+        ],
+      },
     ],
   },
 ];
