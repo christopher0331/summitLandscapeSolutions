@@ -16,7 +16,8 @@ export async function generateStaticParams() {
           !(
             category.slug === "lawn-care-maintenance" &&
             service.slug === "year-round-maintenance-plans"
-          ),
+          ) &&
+          !(category.slug === "landscaping" && service.slug === "design-build"),
       )
       .map((service) => ({
         category: category.slug,
