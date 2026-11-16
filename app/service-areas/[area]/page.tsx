@@ -12,10 +12,12 @@ export async function generateStaticParams() {
     .filter(
       (area) =>
         area.slug !== "west-seattle" &&
+        area.slug !== "alki" &&
         area.slug !== "ballard" &&
         area.slug !== "beacon-hill" &&
         area.slug !== "burien" &&
         area.slug !== "capitol-hill" &&
+        area.slug !== "columbia-city" &&
         area.slug !== "des-moines" &&
         area.slug !== "fremont" &&
         area.slug !== "green-lake" &&
@@ -27,11 +29,13 @@ export async function generateStaticParams() {
         area.slug !== "normandy-park" &&
         area.slug !== "queen-anne" &&
         area.slug !== "rainier-valley" &&
+        area.slug !== "seward-park" &&
         area.slug !== "renton" &&
         area.slug !== "seatac" &&
         area.slug !== "tukwila" &&
         area.slug !== "white-center" &&
-        area.slug !== "federal-way",
+        area.slug !== "federal-way" &&
+        area.slug !== "mount-baker",
     )
     .map((area) => ({ area: area.slug }));
 }

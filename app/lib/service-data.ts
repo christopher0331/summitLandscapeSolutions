@@ -67,6 +67,18 @@ export const serviceCategories: ServiceCategory[] = [
           "Reliable scheduling, transparent pricing, and quality service with thorough cleanup and lasting results.",
         ],
       },
+      {
+        name: "Year-Round Maintenance Plans",
+        slug: "year-round-maintenance-plans",
+        summary:
+          "Annual maintenance agreements covering seasonal pruning, mulching, leaf removal, and ongoing upkeep.",
+        whatsIncluded: [
+          "An annual maintenance agreement covering seasonal pruning, mulching, leaf removal, and ongoing upkeep.",
+          "A visit schedule recommended at the initial consultation, often bi-weekly or monthly depending on season, plant density, and property goals.",
+          "Scheduling priority and consistent crew assignments for year-round clients.",
+          "The service agreement is reviewed annually.",
+        ],
+      },
     ],
   },
   {
@@ -153,6 +165,18 @@ export const serviceCategories: ServiceCategory[] = [
           "Expert guidance on sod or turf selection, layout preparation, project planning, and transparent pricing.",
           "Professional installation focused on proper preparation, drainage, soil health, and long-lasting performance.",
           "Detail-driven execution, complete site cleanup, and a final walkthrough focused on quality, establishment, and lasting results.",
+        ],
+      },
+      {
+        name: "Design-Build",
+        slug: "design-build",
+        summary:
+          "One team manages the project from concept through installation, or installs from plans provided by a landscape architect you have already engaged.",
+        whatsIncluded: [
+          "A single team that can manage the full project from concept through installation.",
+          "The option to execute plans provided by a landscape architect you have already engaged.",
+          "A site visit to review conditions, goals, and budget before we recommend a scope.",
+          "Installation work covered by a written agreement that outlines scope, materials, timeline, and pricing.",
         ],
       },
     ],

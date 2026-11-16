@@ -19,6 +19,11 @@ export const serviceAreaSegments: ServiceAreaSegment[] = [
         summary: "Lawn, landscape, and hardscape services throughout West Seattle.",
       },
       {
+        name: "Alki",
+        slug: "alki",
+        summary: "Lawn care, hardscaping, and landscaping for Alki homes and properties near Alki Beach and Alki Point.",
+      },
+      {
         name: "Ballard",
         slug: "ballard",
         summary: "Landscape design and maintenance support for Ballard properties.",
@@ -49,6 +54,11 @@ export const serviceAreaSegments: ServiceAreaSegment[] = [
         summary: "Professional lawn and landscape service for Queen Anne properties.",
       },
       {
+        name: "Seward Park",
+        slug: "seward-park",
+        summary: "Lawn care, hardscaping, and landscaping for Seward Park homes near Lake Washington.",
+      },
+      {
         name: "Beacon Hill",
         slug: "beacon-hill",
         summary: "Reliable property maintenance and landscape improvements in Beacon Hill.",
@@ -57,6 +67,11 @@ export const serviceAreaSegments: ServiceAreaSegment[] = [
         name: "Madrona",
         slug: "madrona",
         summary: "Custom landscape enhancements and recurring maintenance in Madrona.",
+      },
+      {
+        name: "Mount Baker",
+        slug: "mount-baker",
+        summary: "Lawn care, hardscaping, and landscaping for Mount Baker homes and hillside properties.",
       },
       {
         name: "Rainier Valley",
@@ -72,6 +87,11 @@ export const serviceAreaSegments: ServiceAreaSegment[] = [
         name: "Georgetown",
         slug: "georgetown",
         summary: "Small-lot landscaping, hardscaping, and frontage upkeep in Georgetown.",
+      },
+      {
+        name: "Columbia City",
+        slug: "columbia-city",
+        summary: "Lawn care, hardscaping, and landscaping for Columbia City homes and historic-district properties.",
       },
     ],
   },
