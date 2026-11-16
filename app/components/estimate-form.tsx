@@ -29,6 +29,7 @@ const SERVICE_OPTIONS = [
   { value: "fertilization-weed-control", label: "Fertilization & Weed Control" },
   { value: "aeration-overseeding", label: "Aeration & Overseeding" },
   { value: "seasonal-yard-cleanups", label: "Seasonal Yard Cleanup" },
+  { value: "year-round-maintenance-plans", label: "Year-Round Maintenance Plans" },
   { value: "paver-patios-walkways", label: "Pavers, Patios & Walkways" },
   { value: "retaining-walls", label: "Retaining Walls" },
   { value: "outdoor-living-features", label: "Outdoor Living Features" },

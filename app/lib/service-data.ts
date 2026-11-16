@@ -67,6 +67,18 @@ export const serviceCategories: ServiceCategory[] = [
           "Reliable scheduling, transparent pricing, and quality service with thorough cleanup and lasting results.",
         ],
       },
+      {
+        name: "Year-Round Maintenance Plans",
+        slug: "year-round-maintenance-plans",
+        summary:
+          "Annual maintenance agreements covering seasonal pruning, mulching, leaf removal, and ongoing upkeep.",
+        whatsIncluded: [
+          "An annual maintenance agreement covering seasonal pruning, mulching, leaf removal, and ongoing upkeep.",
+          "A visit schedule recommended at the initial consultation, often bi-weekly or monthly depending on season, plant density, and property goals.",
+          "Scheduling priority and consistent crew assignments for year-round clients.",
+          "The service agreement is reviewed annually.",
+        ],
+      },
     ],
   },
   {
