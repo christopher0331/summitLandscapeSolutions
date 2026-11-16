@@ -63,7 +63,7 @@ const projects = [
     name: "Burien Property Edge Refresh",
     location: "Burien",
     details:
-      "Cleaned and reset boundary zones for better drainage flow, easier upkeep, and improved curb definition.",
+      "Cleaned and reset boundary zones for easier upkeep and improved curb definition.",
     image: "/DB20E9B0-564F-4DA0-B503-1D90AFA81BE6_4_5005_c.jpeg",
   },
 ];

@@ -118,8 +118,8 @@ export default function Home() {
             </h2>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-slate-600 md:text-lg">
               The strongest outdoor spaces do more than look finished on install day. We focus on
-              grading, drainage, plant selection, and material choices that continue to feel
-              composed through Seattle weather and year-round use.
+              plant selection and material choices that continue to feel composed through Seattle
+              weather and year-round use.
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-3">
               <div className="rounded-2xl border border-slate-200 bg-white p-5">
@@ -127,7 +127,7 @@ export default function Home() {
                   Built Right
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-slate-600">
-                  Drainage-aware solutions and durable material selections.
+                  Durable material selections suited to Seattle weather.
                 </p>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-5">

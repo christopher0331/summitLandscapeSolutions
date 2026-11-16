@@ -47,7 +47,7 @@ export const serviceCategories: ServiceCategory[] = [
         name: "Aeration and Overseeding",
         slug: "aeration-overseeding",
         summary:
-          "Core aeration and overseeding to improve soil oxygen, drainage, and lawn density.",
+          "Core aeration and overseeding to improve soil oxygen and lawn density.",
         whatsIncluded: [
           "Personalized lawn evaluation to determine aeration and overseeding needs for stronger, healthier turf.",
           "Professional core aeration and premium overseeding designed to improve density, fill thin areas, and support root growth.",
@@ -105,9 +105,9 @@ export const serviceCategories: ServiceCategory[] = [
         summary:
           "Engineered retaining walls that stabilize slopes and create usable planting tiers.",
         whatsIncluded: [
-          "Customized site evaluation to assess slope, drainage, and retaining wall solutions tailored to your property.",
+          "Customized site evaluation to assess slope and retaining wall solutions tailored to your property.",
           "Expert recommendations on wall materials, layout options, project scheduling, and transparent pricing.",
-          "Professional construction focused on proper preparation, drainage management, structural stability, and lasting durability.",
+          "Professional construction focused on proper preparation, structural stability, and lasting durability.",
           "Detail-driven execution, complete site cleanup, and a final walkthrough focused on quality, performance, and satisfaction.",
         ],
       },
@@ -129,7 +129,7 @@ export const serviceCategories: ServiceCategory[] = [
     name: "Landscaping",
     slug: "landscaping",
     summary:
-      "Planting and design services focused on beauty, drainage performance, and low-maintenance growth.",
+      "Planting and design services focused on beauty and low-maintenance growth.",
     services: [
       {
         name: "Landscape Design",
@@ -163,7 +163,7 @@ export const serviceCategories: ServiceCategory[] = [
         whatsIncluded: [
           "Customized site evaluation and turf consultation tailored to your property, usage needs, and growing conditions.",
           "Expert guidance on sod or turf selection, layout preparation, project planning, and transparent pricing.",
-          "Professional installation focused on proper preparation, drainage, soil health, and long-lasting performance.",
+          "Professional installation focused on proper preparation, soil health, and long-lasting performance.",
           "Detail-driven execution, complete site cleanup, and a final walkthrough focused on quality, establishment, and lasting results.",
         ],
       },

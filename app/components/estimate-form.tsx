@@ -376,7 +376,7 @@ export function EstimateForm({
           rows={compact ? 3 : 5}
           value={state.message}
           onChange={handleChange}
-          placeholder="Tell us a bit about your property, goals, and any specific challenges (drainage, slopes, existing landscaping, etc.) — optional."
+          placeholder="Tell us a bit about your property, goals, and any specific challenges (slopes, existing landscaping, etc.) — optional."
           className={`mt-1.5 ${baseField} resize-y`}
         />
         {fieldErrors.message && <p className={errorClass}>{fieldErrors.message}</p>}

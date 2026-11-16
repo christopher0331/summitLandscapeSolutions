@@ -33,7 +33,7 @@ const faqs = [
       {
         question: "Can you help with drainage issues?",
         answer:
-          "Absolutely. We evaluate water flow, grading, and soil conditions before recommending practical drainage, French drain, or erosion-control solutions designed to last through Seattle winters.",
+          "No. Drainage is not a service we offer. We provide lawn care and maintenance, hardscaping, and landscaping.",
       },
       {
         question: "Do you handle both design and installation?",
