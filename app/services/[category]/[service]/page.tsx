@@ -21,6 +21,10 @@ export async function generateStaticParams() {
           !(
             category.slug === "hardscaping" &&
             service.slug === "paver-patios-walkways"
+          ) &&
+          !(
+            category.slug === "lawn-care-maintenance" &&
+            service.slug === "seasonal-yard-cleanups"
           ),
       )
       .map((service) => ({
