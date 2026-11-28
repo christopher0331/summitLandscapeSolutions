@@ -84,6 +84,11 @@ export const serviceAreaSegments: ServiceAreaSegment[] = [
         summary: "Landscaping, lawn care, and hardscaping in South Park.",
       },
       {
+        name: "Highland Park",
+        slug: "highland-park",
+        summary: "Lawn care, hardscaping, and landscaping for Highland Park homes near Highland Park Playground and Riverview Playfield.",
+      },
+      {
         name: "Georgetown",
         slug: "georgetown",
         summary: "Small-lot landscaping, hardscaping, and frontage upkeep in Georgetown.",
